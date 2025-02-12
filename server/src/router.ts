@@ -22,6 +22,14 @@ router.put("/api/user/update/:id", userActions.edit);
 router.delete("/api/user/delete/:id", userActions.deleteUser);
 
 /*************************************************************************** */
+import projectActions from "./modules/project/projectActions";
+
+router.get("/api/projects", projectActions.browse);
+router.post("/api/project/create", projectActions.add);
+router.put("/api/project/update/:id", projectActions.edit);
+router.delete("/api/project/delete/:id", projectActions.deleteProject);
+
+/*************************************************************************** */
 import teamActions from "./modules/team/teamActions";
 
 router.get("/api/teams", teamActions.browse);
