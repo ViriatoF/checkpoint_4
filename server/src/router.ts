@@ -17,5 +17,8 @@ router.post("/api/items", itemActions.add);
 import userActions from "./modules/user/userActions";
 
 router.get("/api/users", userActions.browse);
+router.post("/api/user/create", userActions.add);
+router.put("/api/user/update/:id", userActions.edit);
+router.delete("/api/user/delete/:id", userActions.deleteUser);
 
 export default router;
