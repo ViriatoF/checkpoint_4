@@ -95,6 +95,11 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+INSERT INTO user (firstname,lastname,phone,email,matricule,role,password) 
+VALUES 
+("Jean", "Portetrois", "06.07.09.08.44", "jeanportetrois@mail.fr", 00002, "employee", "password"),
+("Viriato", "Ferreira", "06.07.09.08.44", "viriato.ferreira44@gmail.fr", 00001, "admin", "password")
+
 --
 -- Dumping data for table `user`
 --
