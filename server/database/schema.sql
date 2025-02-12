@@ -15,6 +15,11 @@ CREATE TABLE IF NOT EXISTS `project` (
 -- Dumping data for table `project`
 --
 
+INSERT INTO project (name_project, start_date, end_date) 
+VALUES 
+("Duo des cimes", "2027-05-02", "2028-07-08"),
+("Gare nord", "2028-05-02", "2029-07-08");
+
 --
 -- Table structure for table `user`
 --
