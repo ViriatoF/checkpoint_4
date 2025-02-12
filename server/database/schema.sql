@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO user (firstname, lastname, phone, email, matricule, role, password) 
 VALUES 
 ("Jean", "Portetrois", "06.07.09.08.44", "jeanportetrois@mail.fr", 00002, "employee", "password"),
+("Sarah", "Croche", "06.22.33.44.55", "sarahcroche@mail.fr", 00003, "employee", "123soleil"),
 ("Viriato", "Ferreira", "06.07.09.08.44", "viriato.ferreira44@gmail.fr", 00001, "admin", "password");
 
 --
@@ -60,3 +61,8 @@ CREATE TABLE IF NOT EXISTS `team` (
 --
 -- Dumping data for table `team`
 --
+
+INSERT INTO team (nb_team, name_team, lead_team, user_id, project_id) 
+VALUES 
+(7, "Salmon", "jean-pierre", 1, 1),
+(8, "Shark", "Francis", 3, 2);
