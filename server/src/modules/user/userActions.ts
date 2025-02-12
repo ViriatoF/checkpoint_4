@@ -36,6 +36,8 @@ const edit: RequestHandler = async (req, res, next) => {
 
     if (updateUser) {
       res.status(201).send(`User ${id} has updated!`);
+    } else {
+      res.status(401);
     }
   } catch (err) {
     next(err);
