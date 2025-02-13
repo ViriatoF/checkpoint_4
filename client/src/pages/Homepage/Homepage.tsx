@@ -1,7 +1,57 @@
+import "./homepage.css";
+
 function Homepage() {
   return (
     <>
-      <h1>Page home</h1>
+      <main className="home-container">
+        <section className="admin-ui">
+          <h1>Bienvenue</h1>
+        </section>
+        <section className="user-container">
+          <article>
+            <section>
+              <p>jean</p>
+              <p>Peuplu</p>
+              <p>jean</p>
+              <p>jean</p>
+              <p>jean</p>
+              <p>jean</p>
+            </section>
+            <section className="button-section">
+              <button type="button">edit</button>
+              <button type="button">delete</button>
+            </section>
+          </article>
+          <article>
+            <section>
+              <p>jean</p>
+              <p>Peuplu</p>
+              <p>jean</p>
+              <p>jean</p>
+              <p>jean</p>
+              <p>jean</p>
+            </section>
+            <section className="button-section">
+              <button type="button">edit</button>
+              <button type="button">delete</button>
+            </section>
+          </article>
+          <article>
+            <section>
+              <p>jean</p>
+              <p>Peuplu</p>
+              <p>jean</p>
+              <p>jean</p>
+              <p>jean</p>
+              <p>jean</p>
+            </section>
+            <section className="button-section">
+              <button type="button">edit</button>
+              <button type="button">delete</button>
+            </section>
+          </article>
+        </section>
+      </main>
     </>
   );
 }

@@ -1,0 +1,49 @@
+.admin-ui {
+  height: 40vh;
+  padding: 2em;
+}
+
+.user-container {
+  border-top: 1px solid var(--background-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.2em;
+  & article {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2em;
+    border: 1px solid var(--background-color);
+    padding: 0.5em;
+    border-radius: 8px;
+  }
+  & article:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  & article section:first-child {
+    display: flex;
+    gap: 1em;
+  }
+}
+
+.button-section {
+  width: 7em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & button {
+    width: 4em;
+    height: 3em;
+    transition: 0.3s ease-in-out;
+  }
+  & button:first-child:hover {
+    background-color: green;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+  & button:last-child:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+}
