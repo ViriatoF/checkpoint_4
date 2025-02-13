@@ -6,6 +6,10 @@ function Homepage() {
       <main className="home-container">
         <section className="admin-ui">
           <h1>Bienvenue</h1>
+
+          <section className="admin-button">
+            <button type="button">Create</button>
+          </section>
         </section>
         <section className="user-container">
           <article>
