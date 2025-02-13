@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: var(--background-color); */
+}
+
+:root {
+  --font: "Roboto";
+  --background-color: rgb(3, 3, 61);
+  --font-color: rgb(247, 247, 247);
+}
+
+label,
+p {
+  font-family: var(--font);
+  color: var(--background-color);
+}
+
+button {
+  font-family: var(--font);
+  color: var(--background-color);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+input {
+  border-radius: 8px;
+  height: 2.5em;
+}
