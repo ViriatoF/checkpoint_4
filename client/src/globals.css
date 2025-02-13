@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: var(--font);
 }
 
 :root {
@@ -16,12 +17,10 @@ body {
 
 label,
 p {
-  font-family: var(--font);
   color: var(--background-color);
 }
 
 button {
-  font-family: var(--font);
   color: var(--background-color);
   border-radius: 8px;
   background-color: transparent;
