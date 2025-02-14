@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `lastname` varchar(45) NOT NULL,
   `phone` varchar(20) NOT NULL,
   `email` varchar(45) NOT NULL,
-  `matricule` int,
+  `matricule` int NOT NULL,
   `role` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL,
   PRIMARY KEY (`id`));
@@ -41,9 +41,9 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO user (firstname, lastname, phone, email, matricule, role, password) 
 VALUES 
-("Jean", "Portetrois", "06.07.09.08.44", "jeanportetrois@mail.fr", 00002, "employee", "password"),
-("Sarah", "Croche", "06.22.33.44.55", "sarahcroche@mail.fr", 00003, "employee", "123soleil"),
-("Viriato", "Ferreira", "06.07.09.08.44", "viriato.ferreira44@gmail.fr", 00001, "admin", "password");
+("Jean", "Portetrois", "06.07.09.08.44", "jeanportetrois@mail.fr", 2, "employee", "password"),
+("Sarah", "Croche", "06.22.33.44.55", "sarahcroche@mail.fr", 3, "employee", "123soleil"),
+("Viriato", "Ferreira", "06.07.09.08.44", "viriato.ferreira44@gmail.fr", 1, "admin", "password");
 
 --
 -- Table structure for table `team`
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `team` (
   KEY `user_id_idx` (`user_id`),
   KEY `project_id_idx` (`project_id`),
   CONSTRAINT `project_id` FOREIGN KEY (`project_id`) REFERENCES `project` (`id`),
-  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+  CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE
 );
 
 --

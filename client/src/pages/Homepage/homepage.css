@@ -5,16 +5,18 @@
   flex-direction: column;
   justify-content: space-between;
   & .admin-button {
-    width: 3em;
+    width: 5em;
     display: flex;
     align-items: center;
     & button {
-      height: 3em;
-      width: 4em;
+      height: 5em;
+      width: 7em;
       transition: 0.3s ease-in-out;
+      cursor: pointer;
     }
     & button:hover {
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: 2px solid green;
       background-color: green;
       color: white;
       transition: 0.3s ease-in-out;
@@ -45,24 +47,52 @@
   }
 }
 
-.button-section {
-  width: 7em;
+.user-container form {
   display: flex;
-  justify-content: space-between;
+  gap: 1em;
   align-items: center;
   & button {
-    width: 4em;
+    width: 5em;
     height: 3em;
+    cursor: pointer;
     transition: 0.3s ease-in-out;
   }
+  & button:hover {
+    width: 5em;
+    height: 3em;
+    cursor: pointer;
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  align-items: center;
+  & button {
+    width: 6em;
+    height: 3em;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
   & button:first-child:hover {
+    border: 2px solid green;
     background-color: green;
     color: white;
     transition: 0.3s ease-in-out;
   }
   & button:last-child:hover {
+    border: 2px solid red;
     background-color: red;
     color: white;
     transition: 0.3s ease-in-out;
   }
+}
+
+.not-active {
+  display: none !important;
 }

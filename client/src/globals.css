@@ -30,3 +30,8 @@ input {
   border-radius: 8px;
   height: 2.5em;
 }
+
+svg {
+  height: 2em;
+  width: 2em;
+}
